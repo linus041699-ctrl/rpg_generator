@@ -3,11 +3,12 @@ def choose_class():
     print("Available Classes:", ", ".join(classes))
     choice = input("Choose your class: ").capitalize()
     return choice if choice in classes else "Adventurer"
+
 def main():
-print("---Welcome to the Welcome to the Character Generator ---")
-    # Components will be combined here
-    name = "Hero"
-    print(f"\nCharacter {name} has been successfully created!")
+    print("--- Welcome to the Character Generator ---")
+    name = input("Enter character name: ")
+    char_class = choose_class()
+    print(f"\nCharacter {name} the {char_class} has been created!")
 
 if __name__ == "__main__":
     main()
