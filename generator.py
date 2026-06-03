@@ -15,8 +15,8 @@ return gear.get(char_class, ["Ragged Clothes"])
 def main():
     print("--- Welcome to the Character Generator ---")
     name = input("Enter character name: ")
-    char_class = choose_class()
-    print(f"\nCharacter {name} the {char_class} has been created!")
+    gear = get_starting_gear("Warrior")
+    print(f"\nCharacter {name} created with gear: {gear}!")
 
 if __name__ == "__main__":
     main()
